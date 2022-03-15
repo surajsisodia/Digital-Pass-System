@@ -24,7 +24,7 @@ class SuccessDialog extends StatelessWidget {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 20,
+                height: 18,
               ),
               Container(
                 padding: EdgeInsets.all(5),
@@ -42,7 +42,18 @@ class SuccessDialog extends StatelessWidget {
                       ),
               ),
               SizedBox(
-                height: 16,
+                height: 8,
+              ),
+              Text(
+                "${person.name}",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+              ),
+              Text(
+                "${person.branch} (${person.year})",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+              ),
+              SizedBox(
+                height: 14,
               ),
               MaterialButton(
                 onPressed: () async {
