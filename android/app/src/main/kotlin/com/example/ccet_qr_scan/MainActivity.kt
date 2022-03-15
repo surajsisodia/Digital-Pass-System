@@ -1,4 +1,4 @@
-package com.example.ccet_qr_scan
+package com.ccet.qrscan
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ccet_qr_scan">
-   <application
-        android:label="ccet_qr_scan"
+    package="com.ccet.qrscan">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:label="CCET QR Scan"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
