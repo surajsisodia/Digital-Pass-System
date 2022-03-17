@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:ccet_qr_scan/error_dialog.dart';
 import 'package:ccet_qr_scan/person.dart';
 import 'package:ccet_qr_scan/success_dialog.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -98,6 +99,14 @@ class _HomePageState extends State<HomePage> {
             return SuccessDialog(
               person: person,
             );
+          });
+    } else {
+      await showDialog(
+          barrierDismissible: false,
+          barrierColor: Colors.transparent,
+          context: context,
+          builder: (context) {
+            return ErrorDialog();
           });
     }
 

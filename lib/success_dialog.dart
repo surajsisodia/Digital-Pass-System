@@ -45,11 +45,11 @@ class SuccessDialog extends StatelessWidget {
                 height: 8,
               ),
               Text(
-                "${person.name}",
+                "${person.name!.toUpperCase()}",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
               ),
               Text(
-                "${person.branch} (${person.year})",
+                "${person.branch!.toUpperCase()} (${person.year})",
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               SizedBox(
